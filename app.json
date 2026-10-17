@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "dranbleiben",
+    "name": "Dranbleiben",
     "slug": "dranbleiben",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gamerrestaurant.dranbleiben"
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +17,23 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.gamerrestaurant.dranbleiben"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Dranbleiben trägt deine Termine in deinen Kalender ein und liest sie für Erinnerungen und den Wochenausblick."
+        }
+      ],
+      [
+        "expo-notifications",
+        {}
+      ]
+    ]
   }
 }
